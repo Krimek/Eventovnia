@@ -22,6 +22,17 @@ namespace AdminApp.UI.Playlist
         public AddPlaylist()
         {
             InitializeComponent();
+            FillComboBoxes(new Uri(""));
+        }
+
+        public AddPlaylist(params string[] tracks)
+        {
+            FillComboBoxes(new Uri(""), tracks);
+        }
+
+        private void FillComboBoxes(Uri folderWithTracks, params string[] currentTracks)
+        {
+            throw new NotImplementedException();
         }
 
         private void SearchTrackTextBoxTextChanged(object sender, TextChangedEventArgs e)
