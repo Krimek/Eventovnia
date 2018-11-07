@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="AdminApp.UI.MainWindow.AddNewPlaylist"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdminApp.UI.MainWindow"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+    <Grid Background="Red">
+        <Label Content="+" HorizontalAlignment="Center" Margin="10,10,10,10" VerticalAlignment="Center" Height="180" Width="180" Background="Green" FontSize="110" Foreground="#FF001ABF" HorizontalContentAlignment="Center" MouseLeftButtonUp="AddNewPlaylistMouseLeftButtonUp"/>
+    </Grid>
+</UserControl>

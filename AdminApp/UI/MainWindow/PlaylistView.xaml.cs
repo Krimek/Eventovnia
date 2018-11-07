@@ -10,20 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AdminApp.MainWindow
+namespace AdminApp.UI.MainWindow
 {
     /// <summary>
-    /// Interaction logic for PlaylistUI.xaml
+    /// Interaction logic for PlaylistViewUI.xaml
     /// </summary>
-    public partial class PlaylistUI : UserControl
+    public partial class PlaylistViewUI : Window
     {
-        public PlaylistUI()
+        public PlaylistViewUI()
         {
             InitializeComponent();
         }
-        
     }
 }
