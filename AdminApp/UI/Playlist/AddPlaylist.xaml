@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdminApp.UI.Playlist"
         mc:Ignorable="d"
-        Title="AddPlaylist" Height="450" Width="800">
+        Title="Nowa playlista" Height="450" Width="600">
     <Grid>
-        
+        <Label Content="Nazwa playlisty:" HorizontalAlignment="Center" Margin="0,30,200,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Center" Height="23" Margin="200,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" MaxLength="30"/>
+        <Label Content="Utwory" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="158" Margin="40,190,0,0" VerticalAlignment="Top" Width="200" SelectionMode="Multiple"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="40,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextChanged="SearchTrackTextBoxTextChanged"/>
+        <ListBox HorizontalAlignment="Right" Height="158" Margin="0,190,40,0" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="MoveToSelect" Content="&gt;" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="20" Click="MoveToSelectButtonClick"/>
+        <Button x:Name="RemoveFromSelect" Content="&lt;" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" Width="20" Click="RemoveFromSelectButtonClick"/>
+        <Button x:Name="MoveUp" Content="^" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Width="20" Click="MoveUpButtonClick"/>
+        <Button x:Name="MoveDown" Content="v" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="20" Click="MoveDownButtonClick"/>
+        <Button x:Name="Cancel" Content="Anuluj" HorizontalAlignment="Center" Margin="0,0,250,15" VerticalAlignment="Bottom" Width="75"/>
+        <Button x:Name="Reset" Content="Resetuj" HorizontalAlignment="Center" Margin="0,0,0,15" VerticalAlignment="Bottom" Width="75"/>
+        <Button x:Name="Apply" Content="Zatwierdź" HorizontalAlignment="Center" Margin="250,0,0,15" VerticalAlignment="Bottom" Width="75"/>
     </Grid>
 </Window>
