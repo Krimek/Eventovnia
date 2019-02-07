@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace AdminApp.UI.Playlist
+namespace AdminApp.UI.Help
 {
     /// <summary>
-    /// Interaction logic for EditPlaylist.xaml
+    /// Interaction logic for Information.xaml
     /// </summary>
-    public partial class EditPlaylist : Window
+    public partial class Information : Window
     {
-        public EditPlaylist()
+        public Information()
         {
             InitializeComponent();
         }

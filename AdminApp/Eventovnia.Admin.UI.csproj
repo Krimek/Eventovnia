@@ -61,8 +61,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="UI\MainWindow\AddNewPlaylist.xaml.cs">
-      <DependentUpon>AddNewPlaylist.xaml</DependentUpon>
+    <Compile Include="UI\Help\Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Help\Information.xaml.cs">
+      <DependentUpon>Information.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainWindow\AddNewPlaylistButton.xaml.cs">
+      <DependentUpon>AddNewPlaylistButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\MainWindow\PlaylistButton.xaml.cs">
       <DependentUpon>PlaylistButton.xaml</DependentUpon>
@@ -70,14 +76,11 @@
     <Compile Include="UI\MainWindow\PlaylistView.xaml.cs">
       <DependentUpon>PlaylistView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Playlist\AddPlaylist.xaml.cs">
-      <DependentUpon>AddPlaylist.xaml</DependentUpon>
+    <Compile Include="UI\Playlist\AddEditPlaylist.xaml.cs">
+      <DependentUpon>AddEditPlaylist.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Playlist\ChoosePlaylist.xaml.cs">
       <DependentUpon>ChoosePlaylist.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Playlist\EditPlaylist.xaml.cs">
-      <DependentUpon>EditPlaylist.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -108,7 +111,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="UI\MainWindow\AddNewPlaylist.xaml">
+    <Page Include="UI\Help\Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Help\Information.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\MainWindow\AddNewPlaylistButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -120,15 +131,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\Playlist\AddPlaylist.xaml">
+    <Page Include="UI\Playlist\AddEditPlaylist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Playlist\ChoosePlaylist.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UI\Playlist\EditPlaylist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
