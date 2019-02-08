@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eventovnia.Admin.Common
+namespace Eventovnia.Common
 {
-    class Event
+    public class EventParameters
     {
         public string Name { get; set; }
         public int NumberOfPlaylists { get; set; }
-        public Event()
+        public EventParameters()
         {
 
         }
