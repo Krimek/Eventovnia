@@ -22,15 +22,15 @@ namespace AdminApp.UI.Playlist
         public AddPlaylist()
         {
             InitializeComponent();
-            FillComboBoxes(new Uri(""));
+            FillComboBoxes(new Uri(""), "");
         }
 
-        public AddPlaylist(params string[] tracks)
+        public AddPlaylist(string title, params string[] tracks)
         {
-            FillComboBoxes(new Uri(""), tracks);
+            FillComboBoxes(new Uri(""), title, tracks);
         }
 
-        private void FillComboBoxes(Uri folderWithTracks, params string[] currentTracks)
+        private void FillComboBoxes(Uri folderWithTracks, string title, params string[] currentTracks)
         {
             throw new NotImplementedException();
         }
