@@ -22,6 +22,12 @@ namespace AdminApp.UI.MainWindow
         public PlaylistViewUI()
         {
             InitializeComponent();
+            FillPlaylistView();
+        }
+
+        private void FillPlaylistView()
+        {
+            throw new NotImplementedException();
         }
 
         private void Window_KeyUp(object sender, KeyEventArgs e)
