@@ -109,7 +109,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Eventovnia.Admin.Common\Eventovnia.Admin.Common.csproj">
+      <Project>{7B538C7D-C9D8-4435-9759-FDD2EBED6635}</Project>
+      <Name>Eventovnia.Admin.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="UI\Help\Help.xaml">
       <SubType>Designer</SubType>

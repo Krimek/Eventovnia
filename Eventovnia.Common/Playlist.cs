@@ -8,7 +8,7 @@ namespace Eventovnia.Admin.Common
 {
     public class Playlist
     {
-        public string Title { get; private set; }
+        public string Title { get; }
         public TimeSpan PlaylistLength { get; private set; }
 
         public List<Track> Tracks

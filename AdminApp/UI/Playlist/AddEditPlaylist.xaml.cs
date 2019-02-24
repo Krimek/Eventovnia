@@ -1,16 +1,9 @@
-﻿using System;
+﻿using AdminApp.Properties;
+using Eventovnia.Admin.Common;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace AdminApp.UI.Playlist
 {
@@ -22,17 +15,25 @@ namespace AdminApp.UI.Playlist
         public AddPlaylist()
         {
             InitializeComponent();
-            FillComboBoxes(new Uri(""));
+            FillComboBoxes();
         }
 
         public AddPlaylist(params string[] tracks)
         {
-            FillComboBoxes(new Uri(""), tracks);
+            InitializeComponent();
+            Title = "Edytuj playliste";
+            FillComboBoxes(tracks);
         }
 
-        private void FillComboBoxes(Uri folderWithTracks, params string[] currentTracks)
+        private void FillComboBoxes(params string[] currentTracks)
         {
-            throw new NotImplementedException();
+            string path = Settings.Default.AdminMusicPath;
+            SaveLoadPlaylist loadTracks = new SaveLoadPlaylist();
+            List<string> listTracks = loadTracks.GetTracksList(path);
+            AllTracksListBox.Items.Clear();
+            AllTracksListBox.ItemsSource = listTracks;
+            SelectedTracksListBox.Items.Clear();
+            SelectedTracksListBox.ItemsSource = currentTracks;
         }
 
         private void SearchTrackTextBoxTextChanged(object sender, TextChangedEventArgs e)
@@ -42,7 +43,13 @@ namespace AdminApp.UI.Playlist
 
         private void MoveToSelectButtonClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (AllTracksListBox.SelectedItems.Count > 0)
+            {
+                foreach (object selectedItem in AllTracksListBox.SelectedItems)
+                {
+                    AllTracksListBox.SelectedItems.
+                }
+            }
         }
 
         private void MoveUpButtonClick(object sender, RoutedEventArgs e)
